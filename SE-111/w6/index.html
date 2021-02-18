@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Week 6 Assignment</title>
+</head>
+<body>
+    <p id="output">
+
+    </p>
+    
+    <script>
+        var hourly = Number (prompt('Enter hourly rate.'))
+        console.log(hourly)
+        
+        var hours = Number(prompt('Enter hours worked'))
+        console.log(hours)
+
+        var tax = Number(prompt('Enter tax rate'))
+        console.log(tax)
+
+        gross_pay = (hourly * hours).toFixed(2)
+        
+
+        tax_total = (gross_pay * tax).toFixed(2)
+
+        net_pay = (gross_pay - tax_total).toFixed(2)
+
+        alert(`Gross pay:$${gross_pay}\nUncle Sam's Share:$${tax_total}\nNet Pay:$${net_pay}`)
+        console.log(`Gross pay:$${gross_pay}`)
+        console.log(`Uncle Sam's Share:$${tax_total}`)
+        console.log(`Net Pay:$${net_pay}`)
+        document.querySelector(`#output`).innerHTML=`Gross pay:$${gross_pay}<br>Uncle Sam's Share:$${tax_total}<br>Net Pay:$${net_pay}`
+
+    </script>
+    
+</body>
+</html>
