@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <main>
+
+
+
+    </main>
+
+
+
+
+
+</body>
+
+<script>
+var box =
+ [
+    {l:100, h:200, w:300},
+     {l:32, h:20, w:15},
+     {l:30, h:40, w:50}
+]
+
+
+var main = document.querySelector(`main`)
+
+for(let i=0; i<box.length; i++)
+{
+    let div = document.createElement(`div`)
+    main.appendChild(div)
+
+
+for (key in box[i])
+{
+    
+    let p = document.createElement(`p`)
+    let text = document.createTextNode(box[i][key])
+    p.appendChild(text)
+    div.appendChild(p)
+    }
+    
+
+
+
+
+    
+}
+
+
+
+
+
+
+
+
+
+
+var div = document.createElement(`div`)
+main.appendChild(div)
+
+
+
+
+
+
+
+
+
+
+/*var p = document.createElement(`p`)
+var text = document.createTextNode(box.l)
+var p1 = document.createElement(`p`)
+var text1 = document.createTextNode(box.w)
+var text2 = document.createTextNode(box.h)
+var p2 = document.createElement(`p`)
+
+main.appendChild(div)
+div.appendChild(p)
+p.appendChild(text)
+div.appendChild(p1)
+p1.appendChild(text1)
+div.appendChild(p2)
+p2.appendChild(text2)*/
+
+
+
+
+
+
+
+
+
+
+
+
+</script>
+
+
+
+
+
+</html>
